@@ -95,3 +95,27 @@ else:
 # Count my toys again (using len())
 print("I have this many toys now:", len(my_toys))
 print("Final toy list:", my_toys)
+
+# Favorite Toys Tracker Project - Part 6: Remove Toys Interactively
+# Ask the user to remove a toy (using input())
+print("Let's remove a toy from your toy box!")
+toy_to_remove = input("Type the name of a toy to remove: ")  # Get the toy name from the user
+
+# Check if the toy is in the list before removing
+if toy_to_remove in my_toys:
+    my_toys.remove(toy_to_remove)  # Remove the toy from the list
+    print(f"Removed {toy_to_remove}! Now my toys are:", my_toys)
+
+    # Remove the toy from PostgreSQL
+    conn = psycopg2.connect(dbname="training_db", user="postgres", password="Qwerty123!!", host="localhost", port="5432")
+    cur = conn.cursor()
+    cur.execute("DELETE FROM toys WHERE name = %s", (toy_to_remove,))  # Delete the toy from the toys table
+    conn.commit()
+    print(f"Removed {toy_to_remove} from my big toy box in the sky (database)!")
+    conn.close()
+else:
+    print(f"Sorry, {toy_to_remove} is not in my toy box!")
+
+# Count my toys again (using len())
+print("I have this many toys now:", len(my_toys))
+print("Final toy list:", my_toys)
