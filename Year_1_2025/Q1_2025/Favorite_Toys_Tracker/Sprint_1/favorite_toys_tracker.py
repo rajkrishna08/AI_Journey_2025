@@ -35,3 +35,18 @@ print("Took the ball away! Now my toys are:", my_toys)
 
 # Count my toys again (using len())
 print("I have this many toys now:", len(my_toys))
+
+# Favorite Toys Tracker Project - Part 4: Search for Toys
+# Search for a toy in my list (using in operator)
+search_toy = "car"  # Let's look for a car
+if search_toy in my_toys:
+    print(f"Yay! I found {search_toy} in my toy box!")
+else:
+    print(f"Sorry, I don't have {search_toy} in my toy box.")
+
+# Search for another toy
+search_toy = "train"  # Let's look for a train
+if search_toy in my_toys:
+    print(f"Yay! I found {search_toy} in my toy box!")
+else:
+    print(f"Sorry, I don't have {search_toy} in my toy box.")
