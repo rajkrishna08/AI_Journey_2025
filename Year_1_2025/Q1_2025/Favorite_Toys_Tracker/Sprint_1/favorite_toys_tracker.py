@@ -378,3 +378,6 @@ if __name__ == "__main__":
 
     # Close the door to the toy box when I’m done
     close_db_connection(conn, cursor)  # Make sure the toy box is safe
+    
+      
+    
