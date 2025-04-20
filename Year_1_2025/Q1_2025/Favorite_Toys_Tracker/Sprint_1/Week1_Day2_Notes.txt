@@ -1,6 +1,1 @@
-{
- "cells": [],
- "metadata": {},
- "nbformat": 4,
- "nbformat_minor": 5
-}
+Day 5, Hour 4: Ran simple_toys_tracker.py after fixing venv! Saw my toys (car, doll, robot) and counted 3—my shop is so fun!

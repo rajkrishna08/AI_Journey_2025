@@ -20,3 +20,10 @@ if toy_count >= 3:
     print("Wow, that’s a fun collection!")
 else:
     print("Let’s add more toys soon!")
+
+# List toys in reverse alphabetical order
+print("\nHere are my toys in reverse alphabetical order:")
+sorted_toys = sorted(my_toys, reverse=True)
+for toy in sorted_toys:
+    print(toy)
+print(f"Wow, {len(sorted_toys)} toys listed from Z to A!")
