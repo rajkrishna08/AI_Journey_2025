@@ -1,1 +1,0 @@
-“Day 1: I set up my environment, confirmed Python 3.12.0 and libraries, and wrote my first Python program to print a greeting.”  
